@@ -14,7 +14,7 @@ export class StopsService {
   constructor(private http:HttpClient){}
   
   findAllStops():Observable <Stop[]>{
-    return this.http.get<Stop[]>(`${this.url}`);
+    return this.http.get<Stop[]>(`${this.url}/stops`);
   }
 
 }
