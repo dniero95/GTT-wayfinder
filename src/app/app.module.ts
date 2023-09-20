@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { SelectStopsFormComponent } from './components/select-stops-form/select-stops-form.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
-import { StopsInfoComponent } from './components/stops-info/stops-info.component';
+import { LinesInfoComponent } from './components/lines-info/lines-info.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { StopsInfoComponent } from './components/stops-info/stops-info.component
     SelectStopsFormComponent,
     NotFoundComponent,
     HomeComponent,
-    StopsInfoComponent
+    LinesInfoComponent
   ],
   imports: [
     BrowserModule,

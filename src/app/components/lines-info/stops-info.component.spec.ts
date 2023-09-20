@@ -1,18 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { LinesInfoComponent } from './lines-info.component';
 
-import { StopsInfoComponent } from './stops-info.component';
 
-describe('StopsInfoComponent', () => {
-  let component: StopsInfoComponent;
-  let fixture: ComponentFixture<StopsInfoComponent>;
+
+describe('LinesInfoComponent', () => {
+  let component: LinesInfoComponent;
+  let fixture: ComponentFixture<LinesInfoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StopsInfoComponent ]
+      declarations: [ LinesInfoComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(StopsInfoComponent);
+    fixture = TestBed.createComponent(LinesInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
