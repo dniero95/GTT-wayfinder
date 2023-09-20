@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StopsService {
 
-  constructor() { }
+  constructor(private http:HttpClient){}
+  
+
 }
