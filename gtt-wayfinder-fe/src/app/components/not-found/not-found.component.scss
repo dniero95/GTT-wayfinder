@@ -1,0 +1,28 @@
+.card {
+    max-width: 600px;
+    max-height: fit-content;
+    color: whitesmoke;
+  }
+  
+  .header-image {
+    // background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+display: flex;
+align-items: center;
+justify-content: center;
+  }
+
+  #not-found-img{
+    width: 600px;
+    height: 600px;
+  }
+  
+  .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  mat-card-content{
+    padding: 10px;
+  }
