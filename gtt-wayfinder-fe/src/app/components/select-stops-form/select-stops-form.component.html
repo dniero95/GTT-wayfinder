@@ -37,7 +37,7 @@
         >
           <mat-select required formControlName="endStop">
             <mat-option>-- None --</mat-option>
-            <mat-option *ngFor="let stop of stops" [value]="stop.name">{{stop.name}}</mat-option>
+            <mat-option *ngFor="let stop of stops" [value]="stop.id">{{stop.name}}</mat-option>
           </mat-select>
           <mat-label
             ><mat-icon>directions_bus</mat-icon> <strong>End stop</strong>
