@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent },
   { path: 'stops', component: SelectStopsFormComponent },
-  { path: 'info', component: LinesInfoComponent },
+  { path: 'lines/info/:start/:stop', component: LinesInfoComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
