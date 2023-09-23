@@ -7,6 +7,9 @@ import { SelectStopsFormComponent } from './components/select-stops-form/select-
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { LinesInfoComponent } from './components/lines-info/lines-info.component';
+import { MaterialModule } from './material/material.module';
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,13 +17,15 @@ import { LinesInfoComponent } from './components/lines-info/lines-info.component
     SelectStopsFormComponent,
     NotFoundComponent,
     HomeComponent,
-    LinesInfoComponent
+    LinesInfoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [{provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {floatLabel: 'always'}}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

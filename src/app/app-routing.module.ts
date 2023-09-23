@@ -7,7 +7,7 @@ import { SelectStopsFormComponent } from './components/select-stops-form/select-
 import { LinesInfoComponent } from './components/lines-info/lines-info.component';
 
 const routes: Routes = [
-  { path: '', redirectTo:'home' },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent },
   { path: 'stops', component: SelectStopsFormComponent },
   { path: 'info', component: LinesInfoComponent },
